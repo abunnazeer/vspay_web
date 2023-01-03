@@ -6,7 +6,7 @@ name: Build and Deploy React App via FTP
 # events but only for the master branch
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -27,7 +27,7 @@ jobs:
           CI: false
 
       # Runs a set of commands using the runners shell
-      - name: FTP-Deploy-Action
+      - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
           ftp-server: vscd@vspay.com.ng
