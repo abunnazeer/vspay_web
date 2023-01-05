@@ -1,13 +1,15 @@
-import { Fragment } from "react";
+import { Fragment } from 'react';
 
-import me from "./../../assets/phone.png";
-const ImageCard = props => {
-  const container = {
-    textAlign: props.align,
-  };
+import me from './../../assets/phone.png';
+const ImageCard = (props) => {
+  // const container = {
+  //   textAlign: props.align,
+  // };
   return (
     <Fragment>
-      <section style={container}>
+      <section
+        style={Object.assign({ textAlign: props.align }, { marginTop: '3rem' })}
+      >
         <img src={me} alt="" style={{ width: props.size }} />
       </section>
     </Fragment>

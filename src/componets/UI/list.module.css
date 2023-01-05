@@ -1,0 +1,15 @@
+.list li {
+  display: inline;
+  color: rgb(62, 62, 62);
+  font-weight: 600;
+  margin-left: 1rem;
+  font-size: 1.6rem;
+}
+
+.list li:hover {
+  color: #3459a6;
+}
+
+.list li:active {
+  border-bottom: 0.1rem solid #3459a6;
+}

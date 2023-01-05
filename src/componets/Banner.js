@@ -1,7 +1,7 @@
-import { Fragment } from "react";
-import bannerCss from "./banner.module.css";
-import Button from "./Button";
-import HeadingDescription from "./HDCard";
+import { Fragment } from 'react';
+import bannerCss from './banner.module.css';
+import Button from './Button';
+import HeadingDescription from './HDCard';
 
 const Banner = () => {
   return (

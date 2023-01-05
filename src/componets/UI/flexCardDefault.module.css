@@ -1,0 +1,32 @@
+@media (min-width: 1em) and (max-width: 35em) {
+}
+
+@media (min-width: 35em) and (max-width: 60em) {
+  .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 60em) and (max-width: 70em) {
+  .container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 60em) and (max-width: 500em) {
+  .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+}

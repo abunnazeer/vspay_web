@@ -4,7 +4,7 @@ import cardCss from "./card.module.css";
 const Card = props => {
   return (
     <Fragment>
-      <section className={cardCss.container}> {props.children}</section>
+      <div className={cardCss.container}>{props.children}</div>
     </Fragment>
   );
 };
