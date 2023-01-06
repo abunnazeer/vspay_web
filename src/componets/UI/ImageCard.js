@@ -1,6 +1,5 @@
 import { Fragment } from 'react';
 
-import me from './../../assets/phone.png';
 const ImageCard = (props) => {
   // const container = {
   //   textAlign: props.align,
@@ -8,9 +7,25 @@ const ImageCard = (props) => {
   return (
     <Fragment>
       <section
-        style={Object.assign({ textAlign: props.align }, { marginTop: '3rem' })}
+        style={Object.assign(
+          { textAlign: props.align },
+          { marginTop: '3rem' },
+          { transform: 'skewX(10deg)' }
+        )}
       >
-        <img src={me} alt="" style={{ width: props.size }} />
+        <img
+          src={props.src}
+          alt=""
+          style={Object.assign(
+            { width: props.size },
+            { position: props.pos },
+            { top: props.top },
+            { left: props.left },
+            {
+              zIndex: props.zindex,
+            }
+          )}
+        />
       </section>
     </Fragment>
   );

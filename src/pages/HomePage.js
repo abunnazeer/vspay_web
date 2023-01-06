@@ -1,38 +1,62 @@
-import React, { Fragment } from "react";
+import React, { Fragment } from 'react';
 
-import Header from "../layout/Header";
-import Banner from "../componets/Banner";
-import ImageCard from "../componets/UI/ImageCard";
-import HeadingDescription from "../componets/HDCard";
-import Card from "../componets/Card";
-import AppStore from "../componets/UI/AppStore";
-import FlexCard from "../componets/UI/FlexCard";
-import GridCard from "../componets/UI/GridCard";
-import Footer from "../layout/Footer";
+import Header from '../layout/Header';
+import Banner from '../componets/Banner';
+import ImageCard from '../componets/UI/ImageCard';
+import HeadingDescription from '../componets/HDCard';
+import Card from '../componets/Card';
+import AppStore from '../componets/UI/AppStore';
+import FlexCard from '../componets/UI/FlexCard';
+import GridCard from '../componets/UI/GridCard';
+import Footer from '../layout/Footer';
 //icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCheck,
   faMoneyBillTransfer,
   faBriefcase,
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
 //images
 
-import google from "../assets/google.png";
-import apple from "../assets/apple.png";
-import powerby from "../assets/copyright.png";
-import twitter from "../assets/twitter.png";
-import facebook from "../assets/facebook.png";
-import instgram from "../assets/instagram.png";
-import FlexCardDefault from "../componets/UI/FlexCardDefault";
+import google from '../assets/google.png';
+import apple from '../assets/apple.png';
+import powerby from '../assets/copyright.png';
+import twitter from '../assets/twitter.png';
+import facebook from '../assets/facebook.png';
+import instgram from '../assets/instagram.png';
+import phone from '../assets/phone.png';
+import circle_1 from '../assets/circle_1.jpg';
+import circle_2 from '../assets/circle_2.jpg';
+
+import FlexCardDefault from '../componets/UI/FlexCardDefault';
 
 const HomePage = () => {
   return (
     <Fragment>
       <Header />
+      <ImageCard
+        src={circle_1}
+        size="8rem"
+        align="center"
+        pos="absolute"
+        top="90px"
+        left="145px"
+        zindex="-2"
+      />
+
+      <ImageCard
+        src={circle_2}
+        size="8rem"
+        align="center"
+        pos="absolute"
+        top="380px"
+        left="440px"
+        zindex="-2"
+      />
       <GridCard>
         <Banner />
-        <ImageCard size="20rem" align="center" />
+
+        <ImageCard src={phone} size="20rem" align="center" />
       </GridCard>
       <HeadingDescription
         heading="A Payment Network For Your Business"

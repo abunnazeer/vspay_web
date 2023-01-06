@@ -1,4 +1,4 @@
-@media (min-width: 1em) and (max-width: 30em) {
+@media (min-width: 1em) and (max-width: 40em) {
   .header {
     position: sticky;
     top: 0;
@@ -27,7 +27,7 @@
   }
 }
 
-@media (min-width: 30em) and (max-width: 60em) {
+@media (min-width: 40em) and (max-width: 60em) {
   .hambuger__icon {
     display: none;
   }
