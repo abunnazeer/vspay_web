@@ -6,13 +6,7 @@ const ImageCard = (props) => {
   // };
   return (
     <Fragment>
-      <section
-        style={Object.assign(
-          { textAlign: props.align },
-          { marginTop: '3rem' },
-          { transform: 'skewX(10deg)' }
-        )}
-      >
+      <section style={Object.assign({ textAlign: props.align })}>
         <img
           src={props.src}
           alt=""

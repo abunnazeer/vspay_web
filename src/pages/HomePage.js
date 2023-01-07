@@ -7,8 +7,10 @@ import HeadingDescription from '../componets/HDCard';
 import Card from '../componets/Card';
 import AppStore from '../componets/UI/AppStore';
 import FlexCard from '../componets/UI/FlexCard';
-import GridCard from '../componets/UI/GridCard';
+import GridThree from '../componets/UI/GridThree';
+import GridTwo from '../componets/UI/GridTwo';
 import Footer from '../layout/Footer';
+import Wrapper from '../componets/UI/Wrapper';
 //icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -53,19 +55,22 @@ const HomePage = () => {
         left="440px"
         zindex="-2"
       />
-      <GridCard>
+      <GridTwo>
         <Banner />
 
         <ImageCard src={phone} size="20rem" align="center" />
-      </GridCard>
-      <HeadingDescription
-        heading="A Payment Network For Your Business"
-        description="On-ramp and off-ramp cash with our peer-to-peer network without a bank account."
-        size_0="3rem"
-        size_1="2rem"
-        mt="1rem"
-      />
-      <GridCard>
+      </GridTwo>
+      <Wrapper size="80px">
+        <HeadingDescription
+          heading="A Payment Network For Your Business"
+          description="On-ramp and off-ramp cash with our peer-to-peer network without a bank account."
+          size_0="3rem"
+          size_1="2rem"
+          mt="1rem"
+        />
+      </Wrapper>
+
+      <GridThree>
         <Card>
           <FontAwesomeIcon
             icon={faMoneyBillTransfer}
@@ -100,7 +105,16 @@ const HomePage = () => {
             mt="1rem"
           />
         </Card>
-      </GridCard>
+      </GridThree>
+      <HeadingDescription
+        heading="Powering growth for amazing businesses"
+        description="Vspay is a growth engine for a new generation of innovative, forward-looking organizations operating in Africa."
+        size_0="3.5rem"
+        size_1="1.7rem"
+        mt="1rem"
+        align="left"
+        width="50%"
+      />
       <FlexCard align="center">
         <AppStore image={google} brandName="google" />
         <AppStore image={apple} brandName="apple" />

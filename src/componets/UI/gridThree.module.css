@@ -9,11 +9,16 @@
 } */
 
 @media (min-width: 1em) and (max-width: 30em) {
+  .container {
+    width: 100%;
+    display: block;
+  }
 }
 
 @media (min-width: 30em) and (max-width: 60em) {
   .container {
-    width: 100%;
+    width: 70%;
+    margin: auto;
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: auto auto;
