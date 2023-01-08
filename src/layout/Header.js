@@ -1,11 +1,11 @@
-import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
+import React, { Fragment } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
-import headCss from "./header.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import logo from "./../logo.png";
-import Lists from "../componets/UI/Lists";
+import headCss from './header.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import logo from './../logo.png';
+import Lists from '../components/UI/Lists';
 
 const Header = () => {
   return (
@@ -19,23 +19,25 @@ const Header = () => {
             swapOpacity
             className={headCss.hambuger__icon}
           />
-          <img src={logo} alt="logo" />
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
 
         <Lists>
-          <Link>
+          <NavLink to="/business">
             <li>Business</li>
-          </Link>
-          <Link to="#">
+          </NavLink>
+          <NavLink to="/resources">
             <li>Resources</li>
-          </Link>
-          <Link to="#">
+          </NavLink>
+          <NavLink to="/supports">
             <li>Support</li>
-          </Link>
+          </NavLink>
         </Lists>
         <div>
-          <Link to="https://vspay.com.ng/"> Login</Link>
-          <Link to="https://vspay.com.ng/"> Register</Link>
+          <Link to="/login"> Login</Link>
+          <Link to="/register"> Register</Link>
         </div>
       </header>
     </Fragment>

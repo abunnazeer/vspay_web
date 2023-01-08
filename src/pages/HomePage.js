@@ -1,16 +1,17 @@
 import React, { Fragment } from 'react';
 
 import Header from '../layout/Header';
-import Banner from '../componets/Banner';
-import ImageCard from '../componets/UI/ImageCard';
-import HeadingDescription from '../componets/HDCard';
-import Card from '../componets/Card';
-import AppStore from '../componets/UI/AppStore';
-import FlexCard from '../componets/UI/FlexCard';
-import GridThree from '../componets/UI/GridThree';
-import GridTwo from '../componets/UI/GridTwo';
+import Banner from '../components/Banner';
+import ImageCard from '../components/UI/ImageCard';
+import HeadingDescription from '../components/HDCard';
+import Card from '../components/Card';
+import AppStore from '../components/UI/AppStore';
+import FlexCard from '../components/UI/FlexCard';
+import GridThree from '../components/UI/GridThree';
+import GridTwo from '../components/UI/GridTwo';
+import GridFour from '../components/UI/GridFour';
 import Footer from '../layout/Footer';
-import Wrapper from '../componets/UI/Wrapper';
+import Wrapper from '../components/UI/Wrapper';
 //icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -29,44 +30,55 @@ import instgram from '../assets/instagram.png';
 import phone from '../assets/phone.png';
 import circle_1 from '../assets/circle_1.jpg';
 import circle_2 from '../assets/circle_2.jpg';
+// partner
+import air from '../assets/partner/Air-Peace-Stack-Blue.svg';
+import carbon from '../assets/partner/carbon-dark.svg';
+import film from '../assets/partner/FilmHouse-Stack-Blue.svg';
+import kuda from '../assets/partner/kuda-Stack-Blue.svg';
 
-import FlexCardDefault from '../componets/UI/FlexCardDefault';
+import FlexCardDefault from '../components/UI/FlexCardDefault';
 
 const HomePage = () => {
   return (
     <Fragment>
       <Header />
-      <ImageCard
-        src={circle_1}
-        size="8rem"
-        align="center"
-        pos="absolute"
-        top="90px"
-        left="145px"
-        zindex="-2"
-      />
+      <div className="hide__mobile">
+        <ImageCard
+          src={circle_1}
+          size="8rem"
+          align="center"
+          pos="absolute"
+          top="90px"
+          left="145px"
+          zindex="-2"
+        />
+      </div>
+      <div className="hide__mobile">
+        <ImageCard
+          src={circle_2}
+          size="8rem"
+          align="center"
+          pos="absolute"
+          top="380px"
+          left="440px"
+          zindex="-2"
+        />
+      </div>
 
-      <ImageCard
-        src={circle_2}
-        size="8rem"
-        align="center"
-        pos="absolute"
-        top="380px"
-        left="440px"
-        zindex="-2"
-      />
       <GridTwo>
         <Banner />
 
         <ImageCard src={phone} size="20rem" align="center" />
       </GridTwo>
-      <Wrapper size="80px">
+      <Wrapper size="80px 0">
         <HeadingDescription
           heading="A Payment Network For Your Business"
           description="On-ramp and off-ramp cash with our peer-to-peer network without a bank account."
           size_0="3rem"
           size_1="2rem"
           mt="1rem"
+          align="center"
+          mobile="m__content"
         />
       </Wrapper>
 
@@ -106,15 +118,27 @@ const HomePage = () => {
           />
         </Card>
       </GridThree>
-      <HeadingDescription
-        heading="Powering growth for amazing businesses"
-        description="Vspay is a growth engine for a new generation of innovative, forward-looking organizations operating in Africa."
-        size_0="3.5rem"
-        size_1="1.7rem"
-        mt="1rem"
-        align="left"
-        width="50%"
-      />
+      {/* Powering growth for amazing businesses */}
+      <Wrapper size="80px 0">
+        <HeadingDescription
+          heading="Powering growth for amazing businesses"
+          description="Vspay is a growth engine for a new generation of innovative, forward-looking organizations operating in Africa."
+          size_0="3.5rem"
+          size_1="1.7rem"
+          mt="1rem"
+          align="center"
+          mobile="m__content"
+        />
+      </Wrapper>
+      <Wrapper>
+        <GridFour>
+          <ImageCard src={air} size="20rem" align="" />
+          <ImageCard src={carbon} size="20rem" align="" />
+          <ImageCard src={film} size="20rem" align="" />
+          <ImageCard src={kuda} size="20rem" align="" />
+          <ImageCard src={air} size="20rem" align="" />
+        </GridFour>
+      </Wrapper>
       <FlexCard align="center">
         <AppStore image={google} brandName="google" />
         <AppStore image={apple} brandName="apple" />

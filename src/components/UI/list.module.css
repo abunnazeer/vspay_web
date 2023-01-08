@@ -35,7 +35,7 @@
     color: #3459a6;
   }
 
-  .list li:active {
+  .active a {
     border-bottom: 0.1rem solid #3459a6;
   }
 }

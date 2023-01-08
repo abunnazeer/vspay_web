@@ -20,3 +20,27 @@ a {
 body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+@media (min-width: 1em) and (max-width: 30em) {
+  .hide__mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 30em) and (max-width: 60em) {
+  .hide__mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 60em) and (max-width: 70em) {
+  .hide {
+    display: none;
+  }
+}
+
+@media (min-width: 60em) and (max-width: 500em) {
+  .hide {
+    display: none;
+  }
+}

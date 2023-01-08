@@ -1,0 +1,28 @@
+.container {
+  padding: 2rem;
+}
+
+@media (min-width: 1em) and (max-width: 30em) {
+  .m__content h1 {
+    width: 100% !important;
+    font-size: 2.5rem !important;
+  }
+  .m__content p {
+    color: #808080 !important;
+  }
+}
+
+@media (min-width: 30em) and (max-width: 50em) {
+  .container {
+  }
+}
+
+@media (min-width: 50em) and (max-width: 70em) {
+  .container h1 {
+  }
+}
+
+@media (min-width: 70em) and (max-width: 500em) {
+  .container {
+  }
+}
